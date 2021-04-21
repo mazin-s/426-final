@@ -39,7 +39,7 @@ async function callCatPics(num) {
   const result = await axios.get("https://http.cat/402");
   // console.log(result.data);
 }
-// callCatPics(100);
+callCatPics(100);
 
 /*
 // 3. https://alexwohlbruck.github.io/cat-facts/
