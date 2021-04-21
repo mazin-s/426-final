@@ -64,11 +64,11 @@ function NavBar() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/cats"
+                to="/names"
                 className="nav-links"
                 activeClassName="active"
               >
-                Cats
+                Names
               </NavLink>
             </li>
           </ul>

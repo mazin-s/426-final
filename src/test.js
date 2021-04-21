@@ -1,5 +1,5 @@
 import axios from "axios";
-
+/*
 // 1. https://www.boredapi.com/
 async function callBored() {
   const result = await axios.get("https://www.boredapi.com/api/activity");
@@ -33,13 +33,13 @@ async function callDogPics() {
 }
 const dogPictureUrl = await callDogPics();
 console.log(dogPictureUrl);
-
+*/
 // 5. https://http.cat/
-async function callCatPics(num) {
+async function callCatPics() {
   const result = await axios.get("https://http.cat/402");
-  // console.log(result.data);
+  console.log(result.data);
 }
-callCatPics(100);
+callCatPics();
 
 /*
 // 3. https://alexwohlbruck.github.io/cat-facts/

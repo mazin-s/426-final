@@ -13,7 +13,7 @@ export function Home() {
       <h5>Go to 'Jokes' for laughs</h5>
       <h5>Go to 'Memes' for more laughs</h5>
       <h5>Go to 'Dogs' for cuteness</h5>
-      <h5>Go to 'Cats' for laughs and cuteness</h5>
+      <h5>Go to 'Names', enter a name, and guess their nationality</h5>
     </div>
   );
 }

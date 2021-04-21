@@ -6,7 +6,7 @@ import { Activities } from "./components/tabs/Activities";
 import { Jokes } from "./components/tabs/Jokes";
 import { Memes } from "./components/tabs/Memes";
 import { Dogs } from "./components/tabs/Dogs";
-import { Cats } from "./components/tabs/Cats";
+import { Names } from "./components/tabs/Names";
 function App() {
   return (
     <>
@@ -19,7 +19,7 @@ function App() {
             <Route exact path="/jokes" component={Jokes} />
             <Route exact path="/memes" component={Memes} />
             <Route exact path="/dogs" component={Dogs} />
-            <Route exact path="/cats" component={Cats} />
+            <Route exact path="/names" component={Names} />
           </Switch>
         </div>
       </Router>

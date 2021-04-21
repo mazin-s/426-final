@@ -31,7 +31,6 @@ export function Jokes() {
         style={{ width: "200px" }}
         onClick={function () {
           setUpdateJokes(!updateJokes);
-          console.log("hi");
         }}
       >
         New Jokes
