@@ -4,12 +4,11 @@
 }
 
 body {
-  background-color: #e2feff;
+  background-color: #f2f1ef;
 }
 
 .tabs {
-  color: #1e6fda;
   text-align: center;
-  font-size: 3rem;
-  margin-top: 10%;
+  font-size: 2rem;
+  margin-top: 2%;
 }

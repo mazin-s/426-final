@@ -8,7 +8,7 @@ function NavBar() {
       <nav className="navbar">
         <div className="nav-container">
           <NavLink exact to="/" className="nav-logo">
-            Bored.com
+            Boring Website
           </NavLink>
           <ul className="nav-menu">
             <li className="nav-item">
