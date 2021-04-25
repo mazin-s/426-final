@@ -7,6 +7,7 @@ export function Names() {
   const [updateName, setUpdateName] = useState(true);
   async function getName() {
     let name = document.querySelector("#nameTextArea").value;
+
     if (name == "") {
       name = "michael";
     }
