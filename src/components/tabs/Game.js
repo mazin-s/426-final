@@ -9,10 +9,6 @@ export function Game() {
   const [index, setIndex] = useState(Math.floor(16 * Math.random()));
   const [timer, setTimer] = useState();
 
-  function randomIndex() {
-    return Math.floor(16 * Math.random());
-  }
-
   function holeClicked(i) {
     if (state === "notPlaying") {
       return;
@@ -29,9 +25,17 @@ export function Game() {
     }
   }
 
+  function randomIndex() {
+    return Math.floor(16 * Math.random());
+  }
+
+  function changeIndex() {
+    setIndex(randomIndex());
+  }
+
   function startGame() {
     setState("playing");
-    const timer = setInterval(setIndex(randomIndex()), 2000);
+    const timer = setInterval(changeIndex, 1500);
     setScore(0);
     setLives(3);
     setIndex(randomIndex());
