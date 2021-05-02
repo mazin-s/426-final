@@ -35,7 +35,7 @@ export function Game() {
 
   function startGame() {
     setState("playing");
-    const timer = setInterval(changeIndex, 1500);
+    const timer = setInterval(changeIndex, 1250);
     setScore(0);
     setLives(3);
     setIndex(randomIndex());
