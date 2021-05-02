@@ -2,6 +2,7 @@ import "./Game.css";
 import mole from "./mole.png";
 import React, { useState } from "react";
 
+// Game
 export function Game() {
   const [state, setState] = useState("notPlaying"); // playing....notPlaying
   const [score, setScore] = useState(0);
