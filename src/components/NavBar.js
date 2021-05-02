@@ -71,6 +71,16 @@ function NavBar() {
                 Names
               </NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/game"
+                className="nav-links"
+                activeClassName="active"
+              >
+                Game
+              </NavLink>
+            </li>
           </ul>
         </div>
       </nav>

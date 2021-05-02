@@ -8,15 +8,13 @@ export function Names() {
   async function getName() {
     let name = document.querySelector("#nameTextArea").value;
 
-    if (name == "") {
+    if (name === "") {
       name = "michael";
     }
     const result = await axios.get("https://api.nationalize.io/?name=" + name);
     setName(result.data);
     setCountries(result.data.country);
     document.querySelector("#nameTextArea").value = "";
-
-    console.log(countries);
     return result.data;
   }
   useEffect(() => {
@@ -46,9 +44,11 @@ export function Names() {
       <h4>{"Name: " + name.name}</h4>
       {countries.map((c) => (
         <div id={c.country_id}>
-          <h5>{"Country: " + c.country_id}</h5>
-          <h5>{"Probability: " + (c.probability * 100).toFixed(2) + "%"}</h5>
-          <br></br>
+          <h5 id={"country" + c.country_id}>{"Country: " + c.country_id}</h5>
+          <h5 id={"probability" + c.country_id}>
+            {"Probability: " + (c.probability * 100).toFixed(2) + "%"}
+          </h5>
+          <br id={"br" + c.country_id}></br>
         </div>
       ))}
     </div>

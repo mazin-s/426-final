@@ -21,10 +21,10 @@ export function Jokes() {
       <br></br>
       {jokes.map((joke) => (
         <div id={joke.id}>
-          <h5>{"Type: " + joke.type}</h5>
-          <h5>{"Setup: " + joke.setup}</h5>
-          <h5>{"Punchline: " + joke.punchline}</h5>
-          <br></br>
+          <h5 id={"type" + joke.id}>{"Type: " + joke.type}</h5>
+          <h5 id={"setup" + joke.id}>{"Setup: " + joke.setup}</h5>
+          <h5 id={"punchLine" + joke.id}>{"Punchline: " + joke.punchline}</h5>
+          <br id={"br" + joke.id}></br>
         </div>
       ))}
       <button

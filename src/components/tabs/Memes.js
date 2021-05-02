@@ -13,14 +13,18 @@ export function Memes() {
     getMemes();
   }, [updateMemes]);
   return (
-    <div id="jokes">
+    <div id="memes">
       <h1>Memes</h1>
       <br></br>
       {memes.map((meme) => (
         <div id={meme.id}>
-          <h5>{"Name: " + meme.name}</h5>
-          <img src={meme.url}></img>
-          <br></br>
+          <h5 id={"name" + meme.id}>{"Name: " + meme.name}</h5>
+          <img
+            id={"img" + meme.id}
+            src={meme.url}
+            alt="failed to load..."
+          ></img>
+          <br id={"br" + meme.id}></br>
         </div>
       ))}
     </div>

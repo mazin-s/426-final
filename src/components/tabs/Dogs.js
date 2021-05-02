@@ -7,7 +7,6 @@ export function Dogs() {
   async function getDog() {
     const result = await axios.get("https://dog.ceo/api/breeds/image/random");
     setDog(result.data.message);
-    console.log(dog);
     return result.data.message;
   }
   useEffect(() => {
@@ -17,7 +16,7 @@ export function Dogs() {
     <div>
       <h1>Dogs</h1>
       <br></br>
-      <img src={dog}></img>
+      <img src={dog} alt={"loading..."}></img>
       <br></br>
       <button
         style={{ width: "200px" }}
