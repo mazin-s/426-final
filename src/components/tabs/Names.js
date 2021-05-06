@@ -27,7 +27,7 @@ export function Names() {
       <form>
         <textarea
           id="nameTextArea"
-          placeholder="Enter a name..."
+          placeholder="Search a name to find out where they are from."
           rows="5"
           cols="33"
         ></textarea>
