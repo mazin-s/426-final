@@ -35,6 +35,9 @@ export function Game() {
   }
 
   function startGame() {
+    if (state === "playing") {
+      return;
+    }
     setState("playing");
     const timer = setInterval(changeIndex, 1250);
     setScore(0);
@@ -44,6 +47,9 @@ export function Game() {
   }
 
   function endGame() {
+    if (state === "notPlaying") {
+      return;
+    }
     setState("notPlaying");
     clearInterval(timer);
   }
